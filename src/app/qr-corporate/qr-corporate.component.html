@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-12">
+    <div style="margin: 2%;margin-right: 0%">
+      <div class="row mb-2">
+        <div class="col-2" style="border: solid 4px #818181; align-content: center"> <span style="font-size:30px;cursor:pointer;" (click)="openNav()"><img width="100%" src="./assets/covideye.jpeg" alt="Travel History"></span></div>
+        <div class="col-10"><div style="background-color: #818181; font-size: 40px">
+          <span style="font-weight: bolder">Cov<span style="color: red">ID</span> i</span> </div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="{{baseUrl}}/#">Home</a>
+  <a href="{{baseUrl}}/#profile">Change Language</a>
+  <a href="{{baseUrl}}/#">Logout</a>
+</div>
+<div style="margin-top: 5%" align="center"><h3>Your Generated QR Code</h3></div>
+<div style="margin: 5%; margin-top: 10%">
+  <div class="row">
+
+    <div class="col-1"></div>
+    <div class="col-10"> <img width="100%"  height="100%" src="assets/QR.png"> </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+<div style="margin-top: 20%;" align="center">
+  <button (click)="redirectToScan()">Scan Client's ID</button>
+</div>

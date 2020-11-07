@@ -1,0 +1,118 @@
+<div style="margin: 2%;margin-right: 0%">
+  <div class="row mb-2">
+    <div class="col-2" style="border: solid 4px #818181; align-content: center"> <span style="font-size:30px;cursor:pointer;" (click)="openNav()"><img width="100%" src="./assets/covideye.jpeg" alt="Travel History"></span></div>
+    <div class="col-10"><div style="background-color: #818181; font-size: 40px">
+      <span style="font-weight: bolder">Cov<span style="color: red">ID</span> i</span> </div></div>
+  </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="{{baseUrl}}/#">Home</a>
+  <a href="{{baseUrl}}/#profile">Change Language</a>
+</div>
+
+<div style="margin-top: 10%" align="center"><h4>Register as a Corporate user</h4></div>
+<div style="margin: 5%; margin-top: 10%">
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="Username">Name</label>
+        </div>
+        <div class="col-9">
+          <input [(ngModel)]="Username" type="text" id="Username" name="Username" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="nic">Registration Number</label>
+        </div>
+        <div class="col-9">
+          <input [(ngModel)]="regNumber" type="number" id="regNumber" name="regNumber" placeholder="Your registration number..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="nic">NIC</label>
+        </div>
+        <div class="col-9">
+          <input [(ngModel)]="nic" type="text" id="nic" name="nic" placeholder="Your NIC number..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="password">Password</label>
+        </div>
+        <div class="col-9">
+          <input [(ngModel)]="password" type="password" id="password" name="password" placeholder="Your password..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label  style="font-weight: bold"for="contact">Contact No</label>
+        </div>
+        <div class="col-9">
+          <input [(ngModel)]="contact" type="text" id="contact" name="contact" placeholder="Your contact number..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="address">Address</label>
+        </div>
+        <div class="col-9">
+          <input [(ngModel)]="address" type="text" id="address" name="address" placeholder="Your address..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="district">District</label>
+        </div>
+        <div class="col-9">
+          <select [(ngModel)]="district" id="district" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="city">City</label>
+        </div>
+        <div class="col-9">
+          <select [(ngModel)]="city" id="city" name="city">
+            <option value="australia">Colombo</option>
+            <option value="canada">Kalutara</option>
+            <option value="usa">Gampaha</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="status">Status</label>
+        </div>
+        <div class="col-9">
+          <select [(ngModel)]="status" id="status" name="status">
+            <option value="australia">Status 1</option>
+            <option value="canada">Status 2</option>
+            <option value="usa">Status 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <label style="font-weight: bold" for="subject">Special Notes</label>
+        </div>
+        <div class="col-9">
+          <textarea id="subject" name="subject" placeholder="Any special notes.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input (click)="register()" style="width: 100%" type="button" value="Register">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

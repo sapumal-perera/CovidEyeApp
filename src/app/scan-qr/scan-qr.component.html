@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-12">
+    <div style="margin: 2%;margin-right: 0%">
+<div class="row mb-2">
+<div class="col-2" style="border: solid 4px #818181; align-content: center"> <span style="font-size:30px;cursor:pointer;" (click)="openNav()"><img width="100%" src="./assets/covideye.jpeg" alt="Travel History"></span></div>
+  <div class="col-10"><div style="background-color: #818181; font-size: 40px">
+    <span style="font-weight: bolder">Cov<span style="color: red">ID</span> i</span> </div></div>
+</div>
+  <div class="row">
+  <div class="col-3"> <a href="{{baseUrl}}/#travel-history"><img width="80%" src="./assets/history-24px.svg" alt="Travel History"><br><b>Travel History</b></a></div>
+  <div class="col-3"><a href="{{baseUrl}}/#qr-scan"><img width="80%" src="./assets/qr_code_scanner-24px.svg" alt="Scan QR"><br><b>Scan QR</b></a></div>
+  <div class="col-3"><a href="{{baseUrl}}/#share-status"><img width="80%" src="./assets/add_alert-24px.svg" alt="Share Status"><br><b>Share Status</b></a></div>
+  <div class="col-3"><a href="{{baseUrl}}/#profile"><img width="80%" src="./assets/account_circle-24px.svg" alt="My Profile"><br><b>My Profile</b></a></div>
+</div>
+  </div>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="{{baseUrl}}/#">Home</a>
+  <a href="{{baseUrl}}/#profile">Change Language</a>
+  <a href="{{baseUrl}}/#">Logout</a>
+</div>
+<div style="margin-top: 5%" align="center"><h3>QR Scanner</h3></div>
+<div style="margin: 5%; margin-top: 10%">
+  <div class="row">
+
+    <div class="col-1"></div>
+    <div class="col-10"> <img width="100%"  height="100%" src="assets/QRScanner.png"> </div>
+    <div class="col-1"></div>
+  </div>
+</div>

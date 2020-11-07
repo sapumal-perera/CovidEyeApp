@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-12">
+    <div style="margin: 2%;margin-top: 40%">
+      <div class="row mb-2">
+        <div class="col-2"> </div>
+        <div class="col-8"><div style="font-size: 40px">
+      <div align="center" style="align-content: center">   <span style="font-weight: bolder">Cov<span style="color: red">ID</span> i</span> </div></div></div>
+        <div class="col-2"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="imgcontainer">
+  <img src="./assets/covideye.jpeg" alt="Image" class="avatar">
+</div>
+<div align="center" style="margin-top: 20%">
+<div class="row">
+  <div class="col-12">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; height: 100px; width: 50%; font-size: 30px; font-weight: bold">My Account</button>
+</div>
+</div>
+<div class="row m-3">
+  <div class="col-12">
+<a href="{{baseUrl}}/#select-type"><span style="color: #6b33bc; font-size: 25px; font-weight: bold">Register as new >></span></a>
+</div>
+</div>
+</div>
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./assets/covideye.jpeg" alt="User Image" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>NIC Number</b></label>
+      <input [(ngModel)]="userName" type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input [(ngModel)]="password" type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+      <button type="button" (click)="onLoginSuccess()">Login</button>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label> <br> <br>
+      <label>
+        <span style="font-weight: bold; font-size: 25px; color: red" > {{loginMsg}} </span>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
